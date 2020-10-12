@@ -47,11 +47,14 @@
       flex-direction: column;
       position: absolute;
       width: 100%;
+      left: -100%;
       top: 80px;
-      height: 90vh;
+      height: calc(100vh - 80px);
+      transition: all 0.5s ease;
    }
    .nav-menu.active {
       background: black;
+      left: 0;
    }
    .menu-icon {
       display: block;
