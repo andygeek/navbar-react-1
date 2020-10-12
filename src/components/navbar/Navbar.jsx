@@ -21,28 +21,28 @@ export const Navbar = () => {
                </Link>
                <div className="menu-icon">
                   {click ? (
-                     <FontAwesomeIcon icon={faTimes} />
+                     <FontAwesomeIcon icon={faTimes} color="white" />
                   ) : (
-                     <FontAwesomeIcon icon={faBars} />
+                     <FontAwesomeIcon icon={faBars}  color="white"/>
                   )}
                </div>
                <ul className="nav-menu">
                   <li className="nav-item">
-                     <Link to="/" exact>
+                     <Link to="/" className="nav-links">
                         Home
                      </Link>
                   </li>
 
                   <li className="nav-item">
-                     <Link to="/services">Services</Link>
+                     <Link to="/services" className="nav-links">Services</Link>
                   </li>
 
                   <li className="nav-item">
-                     <Link to="/products">Products</Link>
+                     <Link to="/products" className="nav-links">Products</Link>
                   </li>
 
                   <li className="nav-item">
-                     <Link to="/sign-up">Sign-up</Link>
+                     <Link to="/sign-up" className="nav-links">Sign-up</Link>
                   </li>
                </ul>
             </div>

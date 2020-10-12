@@ -1,10 +1,30 @@
+:root {
+    --primary: #fff;
+    --back-color: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+}
 .navbar {
     display: flex;
-    background-color: aquamarine;
+    background: var(--back-color);
+    height: 80px;
+    justify-content: center;
 }
 .navbar-container{
     display: flex;
+    height: 80px;
+    width: 70vw;
+    background-color: rebeccapurple;
+}
+.navbar-logo{
+    color: var(--primary);
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 2rem;
 }
 .nav-menu {
     display: flex;
+    list-style: none;
+
+}
+.nav-links{
+    color: var(--primary);
 }
