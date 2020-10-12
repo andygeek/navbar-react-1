@@ -16,8 +16,9 @@ export const Navbar = () => {
          <div className="navbar">
             <div className="navbar-container">
                <Link to="/" className="navbar-logo">
-                  AndyGeek
+                  Andy  
                   <FontAwesomeIcon icon={faCoffee} />
+                  Geek
                </Link>
                <div className="menu-icon">
                   {click ? (
