@@ -1,0 +1,10 @@
+.navbar {
+    display: flex;
+    background-color: aquamarine;
+}
+.navbar-container{
+    display: flex;
+}
+.nav-menu {
+    display: flex;
+}

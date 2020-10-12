@@ -26,7 +26,7 @@ export const Navbar = () => {
                      <FontAwesomeIcon icon={faBars} />
                   )}
                </div>
-               <ul>
+               <ul className="nav-menu">
                   <li className="nav-item">
                      <Link to="/" exact>
                         Home
