@@ -11,6 +11,8 @@ export const Navbar = () => {
    // Click del menu
    const [click, setClick] = useState(false);
 
+   const closeMenu = () => setClick(false);
+
    const handleClick = () => {
       setClick(!click);
    };
@@ -33,22 +35,34 @@ export const Navbar = () => {
                </div>
                <ul className={click ? "nav-menu active" : "nav-menu"}>
                   <li className="nav-item">
-                     <Link to="/" className="nav-links">
+                     <Link to="/" className="nav-links" onClick={closeMenu}>
                         Home
                      </Link>
                   </li>
                   <li className="nav-item">
-                     <Link to="/services" className="nav-links">
+                     <Link
+                        to="/services"
+                        className="nav-links"
+                        onClick={closeMenu}
+                     >
                         Services
                      </Link>
                   </li>
                   <li className="nav-item">
-                     <Link to="/products" className="nav-links">
+                     <Link
+                        to="/products"
+                        className="nav-links"
+                        onClick={closeMenu}
+                     >
                         Products
                      </Link>
                   </li>
                   <li className="nav-item">
-                     <Link to="/sign-up" className="nav-links">
+                     <Link
+                        to="/sign-up"
+                        className="nav-links"
+                        onClick={closeMenu}
+                     >
                         Sign-up
                      </Link>
                   </li>
